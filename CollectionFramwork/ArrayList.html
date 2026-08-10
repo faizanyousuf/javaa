@@ -67,7 +67,46 @@
     </li>
 </ul>
 
+<h2>Internal Working</h2>
+<p>Unlike a regular array, which has a fixed size, an arraylist can grow and shrink as elements are loaded or removed. This dynamic resizing is achieved by creating a new array when the current array is full and copying the elements to the new array. <br>
+    Internally, the arraylist is implemented as an array of object references. when you add elements to an arraylist, you're essentially storing these elements in this internal array. <br>
+    When you create an ArrayList(), it has a initial capacity (default is 10). The capacity refers to the size of the internal array that can hold elements before needing to resize.
+</p>
+<h2>Adding Elements</h2>
+<ul><li>
+<big> <b>Check Capacity:</b></big> <p>Before adding the new element, arraylist checks if there is enough space in the internal array(element data). IF the array is full, it needs to be resized.</p>
+</li>
+<li><big><b>Resize if Needed: </b></big>
+<p>If the internal array is full, the ArrayList will create a new array with a larger capacity (usually 1.5x) and copy the elements from the old array to the new array.</p></li>
+<li><big><b>Add The Element: 
+</b></big>
+<p>the new element is then added to the internal array at the appropriate index, and the size is incremented.</p></li>
+</ul>
 
+<h2>Resizing the Array</h2>
+
+<ul>
+    <li><big><b>Initial Capacity: </b></big>
+    By default, the initial capacity is 10. this means the internal array can hold 10 elements before it needs a grow.</li>
+    <li><big><b>Growth Factor: </b></big>
+     When the internal array is full a new array is created with a size 1.5x. this growth factor balances memory efficiency and resizing cose.</li>
+     <li><big><b>Copying Elements: </b></big>when resizing occurs, all elements form the old array are copied to the new array, which is an O(n) operation, where n is the number of elements in the arraylist.</li>
+</ul>
+<h2>Removing Elements</h2>
+<ul>
+    <li><big><b>Check bounds: </b></big>The arraylist first checks if the index is within the valid range</li>
+    <li><big><b>Remove the element: </b></big>the element is removed, and all elements to the right of the removed element are shifted one position to the left to fill the gap.</li>
+    <li><big><b>Reduce size: </b></big>the size is decremented  by 1.</li>
+</ul>
+
+<h2>To Study: </h2>
+<ul>
+    <li><code>Arrays.asList();</code></li>
+    <li><code>listOf();</code></li>
+    <li><code>Collections.sort()</code></li>
+    <li><code>list.sort();</code></li>
+</ul>
     
+<p>Next Topic: <a href="Comparator.html">Comparator</a></p>
 </body>
 </html>
