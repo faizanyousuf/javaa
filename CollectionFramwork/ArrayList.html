@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>ArrayList</h2>
+    <p>ArrayList is a resizable array implementation of the list interface. unlike arrays in java, which have a fixed size, an arraylist can change its size dynamically as elements are added, removed. this flexibiliy makes it a popular choice when the number of elements in a list isn't known in advance</p>
+    <h3>Syntax</h3>
+    <p><code>
+          ArrayList<Integer> arr1 = new ArrayList<>();
+        <br>or <br>
+        List<Integer> list = new ArrayList<>();
+    </code></p>
+<h2>Level 1 -- Foundation</h2>
+<ul>
+    <li>Arraylist is a class</li>
+    <li>It implements List</li>
+    <li>List extends Collection</li>
+    <li>It maintains insertion order</li>
+    <li>Duplicates are allowed</li>
+    <li>It uses zero-based indexing</li>
+    <li>it is dynamically resizable</li>
+    <li>it internally uses an array(Object[] in OpenJDK)</li>
+</ul>
+
+<h2>Level 2 -- Master the Core Methods</h2>
+
+<ul>
+    <li>Adding: <code><ul><li>
+        list.add(10)</li>
+        <li>list.add(1,20)</li>
+        <li>list.addAll(other);</li>
+        <li>list.addAll(1,other);</li>
+    </li></ul></code></li>
+    <li>Accessing: <code><ul>
+        <li>List.get(index)</li>
+        <li>list.size();</li>
+        <li>list.isEmpty();</li>
+    </ul></code></li>
+    <li>Updating: 
+        <code><ul>
+            <li>list.set(2,100); // set --> replace </li>
+        </ul></code>
+    </li>
+    <li>Removing: 
+        <code>
+            <ul>
+                <li>list.remove(0); //index</li>
+                <li>list.remove(Integer.valueOf(20);// object</li>
+                <li>list.removeIf(x -> x%2 == 0); //condition based remove</li>
+                <li>list.clear();</li>
+            </ul>
+        </code>
+        Note: You must master <code>list.remove(index)</code> vs <code>List.remove(Object[]);</code>
+    </li>
+    <li>Searching: 
+        <code>
+            <ul>
+                <li>list.contains(object);</li>
+                <li>list.indexOf(object);</li>
+                <li>list.lastIndexOf(object);</li>
+            </ul>
+        </code>
+    </li>
+</ul>
+
+
+    
+</body>
+</html>
