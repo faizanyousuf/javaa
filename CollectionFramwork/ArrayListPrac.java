@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Arrays;
 public class ArrayListPrac {
     public static void main(String[] args) {
         int[] arr = new int[20]; //fixed size array;
@@ -55,6 +53,15 @@ public class ArrayListPrac {
     //     Integer item = li.set(6,900);
     //     System.out.println(item);
     //     System.out.println(li);
+
+    ArrayList<Integer> list = new ArrayList<>();
+    list.add(45);
+    list.add(80);
+    list.add(42);
+
+    list.sort(null);
+    
+    System.out.println(list);
     
     }
 }
