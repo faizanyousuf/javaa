@@ -1,4 +1,6 @@
+package List.ArrayList;
 import java.util.ArrayList;
+import java.util.List;
 public class ArrayListPrac {
     public static void main(String[] args) {
         int[] arr = new int[20]; //fixed size array;
@@ -27,9 +29,9 @@ public class ArrayListPrac {
     //    System.out.println(size);
     //    System.out.println(list.isEmpty());
 
-       ArrayList<Integer> li = new ArrayList<>();
-       li.add(40);
-       li.add(29);
+    //    ArrayList<Integer> li = new ArrayList<>();
+    //    li.add(40);
+    //    li.add(29);
     //     //int [] arr2 = {2,42,42,522,521,989};
     //     //li.addAll(arr2); because int[] is not a collection
     //     Integer[] arr2 = {3,5,52,5,62};
@@ -62,6 +64,17 @@ public class ArrayListPrac {
     list.sort(null);
     
     System.out.println(list);
-    
+     List<Integer> li = new ArrayList<>();
+     li.add(45);
+     li.add(80);
+    //  li.add(990);
+    boolean b = list.containsAll(li);
+    System.out.println(b);
+
+    Object[] arr1 =  list.toArray();
+    for(Object val : arr1){
+        System.out.println(val);
+    }
+    System.out.println(arr1);
     }
 }

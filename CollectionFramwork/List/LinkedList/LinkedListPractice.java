@@ -21,7 +21,8 @@ public class LinkedListPractice {
 
         int a = list.get(0);
         System.out.println(a);
-
+ Object[] obj  = list.toArray();
+ System.out.println(list);
     }
 }
 
