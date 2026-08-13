@@ -36,9 +36,12 @@
                    list.display();
 
                    System.out.println(list.size);
+
+
+                   int n = 45;
+
+                   if(){}
             
-
-
         }
     }
 
