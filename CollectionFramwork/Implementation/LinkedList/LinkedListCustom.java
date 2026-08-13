@@ -3,6 +3,7 @@
         public static void main(String[] args){
                ArrayList<Integer> li = new ArrayList<>();
                li.add(45);
+               li.add(45);
                li.add(89);
                li.add(800);
             LinkedListCus list = new LinkedListCus(li);
@@ -20,6 +21,7 @@
             // System.out.println(list2.size);
 
             list.add(3,35242);
+            list.add(2,45);
             // list.display();
             // System.out.println(list.size);
 
@@ -29,8 +31,8 @@
 
                
                    list.remove(45);
-                   list.remove(5743);
-                   list.remove(452);
+                //    list.remove(5743);
+                //    list.remove(452);
                    list.display();
 
                    System.out.println(list.size);
@@ -68,7 +70,7 @@ public LinkedListCus(){
            }
     }
 
-    public int remove(int data){
+    public void remove(int data){
          Node prev = head;
             while(head.data == data){
                 head = head.next;
@@ -76,16 +78,20 @@ public LinkedListCus(){
             }
             while(prev.next != null){
                 if(prev.next.data == data){
+                    Node temp = prev.next;
+                    int count = 0;
+                    while(temp.next != null && temp.next.data == data){
+                        temp = temp.next;
+                        count++;
+                    }
+                    prev.next = temp;
                     prev.next = prev.next.next;
-                    size--;
+                    size -= count + 1;
                 }
                 if(prev.next != null){
                 prev = prev.next;
                 }
             }
-            
-         
-        return 1;
     }
     public void addFirst(int data){
         Node node = new Node(data);
