@@ -6,6 +6,62 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h2>What are bitwise Operators?</h2>
+    <p>Bitwise operators work directly on the individual bits of the integer </p>
+     <h2>Main Bitwise Operators </h2>
+     <table border="1">
+      <thead>
+        <tr>
+            <th>Operator</th>
+            <th>Name</th>
+            <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>&</td>
+            <td>Bitwise AND</td>
+            <td>5 & 8</td>
+        </tr>
+        <tr>
+            <td>|</td>
+            <td>Bitwise OR</td>
+            <td>5 | 9</td>
+        </tr>
+        <tr>
+            <td>^</td>
+            <td>Bitwise Xor</td>
+            <td>5 ^ 2</td>
+        </tr>
+        <tr>
+            <td>~</td>
+            <td>Bitwise Not</td>
+            <td>~4</td>
+        </tr>
+        <tr>
+            <td>>></td>
+            <td>Right shift</td>
+            <td>5>>1</td>
+        </tr>
+    </tbody>
+     </table>
+
+    <h2>important Properties</h2>
+    <ul>
+        <li>Remove last set bit</li>
+        <p>n = n & (n-1)</p>
+        <li>Get last set bit</li>
+        <p>n & (-n)</p>
+    </ul>
+
+    <h2>Home Work questions</h2>
+    <ol>
+        <li>Write a program to count number of set bits.</li>
+        <li>find missing number in an array (using Xor)</li>
+        <li>find two unique numbers(others appear twice)</li>
+        <li>check if number is power of 4</li>
+        <li>convert decimal to binary manually</li>
+        <li>Implement fast Exponentiation using bitwise</li>
+    </ol>
 </body>
 </html>
