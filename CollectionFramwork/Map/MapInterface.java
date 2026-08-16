@@ -1,0 +1,7 @@
+// package Map;
+
+public class MapInterface {
+    public static void main(String[] args) {
+        
+    }
+}

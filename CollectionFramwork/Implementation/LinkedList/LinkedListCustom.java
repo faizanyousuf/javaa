@@ -1,4 +1,4 @@
-     import java.util.List; import java.util.ArrayList;
+     import java.util.List; import java.util.ArrayList;import java.util.Collections;
     public class LinkedListCustom{
         public static void main(String[] args){
                ArrayList<Integer> li = new ArrayList<>();
@@ -36,6 +36,8 @@
                    list.display();
 
                    System.out.println(list.size);
+
+                //    Collections.sort(li);
 
 
                    int n = 45;
