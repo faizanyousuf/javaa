@@ -34,5 +34,38 @@ public class demo{
         // String s = "2422232423434343";n
         // long x = Long.parseLong(s);
         // System.out.println(x+3);
+
+        StringBuilder sb = new StringBuilder("help others");
+        sb.setCharAt(4,'i');
+        System.out.println(sb);
+
+        String str = reverses("xg kn u ff vr j");
+        System.out.println(str);
     }
+
+    static String reverses(String s) {
+        // your code here
+        StringBuilder sb = new StringBuilder(s);
+        
+        int l = 0;
+        int r = s.length()-1;
+        
+        while(l < r){
+            if(sb.charAt(l) == ' '){
+                l++;
+            }
+            if(sb.charAt(r) == ' '){
+                r--;
+            }
+            
+                char temp = sb.charAt(l);
+                sb.setCharAt(l,sb.charAt(r));
+                sb.setCharAt(r,temp);
+            
+            
+            l++;
+            r--;
+        }
+        return sb.toString();
+}
 }
